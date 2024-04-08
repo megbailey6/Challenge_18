@@ -1,135 +1,280 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 2% 0% 2%;
   
-  /*header*/
-  header {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    background-color: #434C41;
-  }
-  .logo {
-    cursor: pointer;
-    padding: 0px 200px;
-  }
-  div.logo img {
-    width: 65px;
-    height: 65px;
-  }
-  nav {
-    display: inline-block; /*display: inline-block;*/
-    flex-direction: flex-start;
-    padding: 0px 2%px;
-  }
-  nav li {
+}.logo {
+  cursor: pointer;
+  padding: 0% 6%;
+}
+div.logo img {
+  width: 50%;
+  height: 50%;
+}
+nav {
+  padding: 0px 0px;
+  width: 35% 
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0% 5%;
+}
+nav li a {
+  color: #434C41;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.4s ease 0%;
+}
+nav li a:hover {
+  color: #CCD2CB;
+}
+
+/*content*/
+content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 6%;
+  background-image: linear-gradient(white,#CFCCC2);
+}
+
+div.hello {
+  padding: 0%;
+  margin: 5% 0% 0% 0%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.hello img {
+  height: 250px;
+  width: 250px;
+}
+div.hello h1 {
+  color: black;
+  text-align: left;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+}
+div.aboutme {
+  padding: 2% 2.5% 2% 2.5%;
+  width: 70%;
+}
+div.aboutme p {
+  color: black;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Open Sans", serif;
+  padding: 1.5% 3%;
+}
+div.aboutme button {
+  background-color: #434C41;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+}
+div.aboutme button:hover {
+  background-color: #CCD2CB;
+  color: #434C41;
+}
+#mySkills {
+  display: grid;
+  align-content: center;
+  margin: 0% 0%;
+  padding: 2% 6% 2% 6%;
+  background-color: #CFCCC2;
+}
+.skillsTitle img {
+  display: block;
+  padding: 0%;
+  height: 90px;
+}
+.skillsTitle {
+  display: block;
+  padding: 0% 4%;
+}
+.skillsTitle h1{
+  color: black;
+  text-align: left;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+.skillsBox {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0% 5%;
+  margin: 2% 5%;
+}
+.skillsCard {
+  display: block;
+  width: 30%;
+  height: 370px;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5% 2.5%;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 5px;
+  border-color: #434C41;
+  background-color: white;
+}
+.skillsCard h2 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  padding: 5% 0%;
+}
+.skillsCard p {
+  color: black;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Open Sans", serif;
+  padding: 2% 0px;
+}
+
+#myWork {
+  display: grid;
+  align-content: center;
+  margin: 0% 0%;
+  padding: 2% 6% 7% 6%;
+  background-image: linear-gradient(#CFCCC2, white);
+  background-color: #88948A;
+}
+.workTitle img {
+  display: block;
+  padding: 0%;
+  height: 90px;
+}
+.workTitle {
+  display: block;
+  padding: 0% 4%;
+}
+.workTitle h1{
+  color: black;
+  text-align: left;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+.workBox {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0% 5%;
+  margin: 2% 5%;
+}
+.workCard {
+  display: block;
+  width: 30%;
+  height: 445px;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5% 2.5%;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 5px;
+  border-color: #434C41;
+  background-color: white;
+}
+.workCard h2 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  padding: 5% 0%;
+}
+.workCard p {
+  color: black;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Open Sans", serif;
+  padding: 2% 0px;
+}
+.workCard img {
+  height: 252px;
+  width: 137px;
+  display: block;
+  padding: 5%;
+
+}
+.workCard button {
+  background-color: #434C41;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+}
+.workCard button:hover {
+  background-color: #CCD2CB;
+  color: #434C41;
+}
+/*footer*/
+footer {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0%;
+}
+div.footer.nav {
+    padding: 0% 8%;
+}
+div.footer.nav li {
     list-style: none;
-    padding: 0px 40px;
-  }
-  nav li a {
-    color: white;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    transition: all 0.4s ease 0%;
-  }
-  nav li a:hover {
-    color: #CCD2CB;
-  }
-  
-  /*content*/
-  content {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 10px;
-  }
-  div.hello {
-    padding: 200px 100px 200px 200px;
-    width: 39%;
-  }
-  div.hello img {
-    padding: 30px;
-    height: 250px;
-    width: 250px;
-  }
-  div.hello h1 {
-    color: black;
-    text-align: left;
-    font-size: 100px;
-    font-family: "Playfair Display", serif;
-  }
-  div.aboutme {
-    padding: 200px 250px 200px 100px;
-    width: 59%;
-  }
-  div.aboutme p {
-    color: black;
-    text-align: left;
-    font-size: 16px;
-    font-family: "Open Sans", serif;
-    padding: 25px 0px;
-  }
-  div.aboutme button {
-    background-color: #88948A;
-    border: none;
-    color: black;
-    padding: 20px 50px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    float: right;
-    border-radius: 15px;
-  }
-  div.aboutme button:hover {
-    background-color: #CCD2CB;
-  }
-  
-  /*footer*/
-  footer {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    background-color: #434C41;
-  }
-  div.footer.nav {
-      padding: 0px 180px;
-  }
-  div.footer.nav li {
-      list-style: none;
-      padding: 0px 70px;
-  }
-  div.footer.nav li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    transition: all 0.4s ease 0%;
-  }
-  div.footer.nav li a:hover {
-    color: #CCD2CB;
-  }
-  
-  div.connect {
-    padding: 0px 180px;
-  }
-  div.connect li {
-    list-style: none;
-    padding: 0px 70px;
-    color: white;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    text-align: right;
-  }
+    padding: 0% 0%;
+}
+div.footer.nav li a {
+  color: #434C41;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  transition: all 0.4s ease 0%;
+}
+div.footer.nav li a:hover {
+  color: #CCD2CB;
+}
+div.connect {
+  padding: 0% 8%;
+
+}
+div.connect li {
+  list-style: none;
+  padding: 0% 0%;
+  color: #434C41; 
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+div.connect img {
+  height: 25px;
+  width: 25px;
+}
